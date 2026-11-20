@@ -1,16 +1,39 @@
-# React + Vite
+# React Routing & Firebase Authentication
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Name:** Tabita Munthaha
+**Student ID:** C243460
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A simple React application with multiple pages, React Router navigation, Firebase Email/Password authentication, and protected routes.
 
-## React Compiler
+## Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Page      | Route      | Access    |
+| --------- | ---------- | --------- |
+| Home      | /          | Public    |
+| Login     | /login     | Public    |
+| Register  | /register  | Public    |
+| Dashboard | /dashboard | Protected |
+| Profile   | /profile   | Protected |
 
-## Expanding the Oxlint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Register and login with Email and Password (Firebase Authentication)
+- Logout
+- Protected routes: Dashboard and Profile redirect to Login if not logged in
+- Navbar changes based on login status
+- User stays logged in after page refresh
+
+## Technologies
+
+- React (Vite)
+- React Router
+- Firebase Authentication
+
+## How to Run
+
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm run dev`
+4. Open the link shown in the terminal (usually http://localhost:5173)
